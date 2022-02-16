@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="div1">
+            <div class="name-balance-add">
+                <div class="name-balance">
+                    <input id = "name" class = "inp" type="text" value="New Customer">
+                    <input id = "balance" class = "inp" type="text" value= 0>
+                </div>
+                <button id="btnAdd">Add</button>
+            </div>
+            <div id="transaction-warning"></div>
+            <small></small>
+            <h2>Transactions</h2>
+            <div class="accounts">
+                <ol id="accounts-list"></ol>
+
+
+            </div>
+
+        </div>
+
+        <div class="div2">
+            
+                <div class="commands">
+                    <div class="command">
+                        <label>Sender</label>
+                        <select id="sender">
+
+                        </select>
+                    </div>
+                    <div class="command">
+                        <label>Receiver</label>
+                        <select id="receiver"> 
+              
+                        </select>
+                    </div>
+                    <div class="command">
+                        <label>Amount</label>
+                        
+                        <input type="number" class="inp" id="amount">
+                    </div>
+                    <div class="command">
+                        <button id="btnTransfer">Transfer</button>
+                    </div>
+                </div>
+                
+            <h2>History</h2>
+            <div class="history">
+                <ol id="history-list"></ol>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
